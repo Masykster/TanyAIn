@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanyaIn Aja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="chat-header">
+            <div class="avatar-container">
+                <div class="bot-avatar">✨</div>
+            </div>
+            <div class="header-info">
+                <h1>TanyAIn</h1>
+                <span class="status">TanyAIn Powered by Gemini</span>
+            </div>
+            <button id="clear-chat" class="clear-btn" aria-label="Clear Chat" title="Hapus Ingatan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+        </header>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                Halo! Aku Gemini. Ada yang bisa aku bantu hari ini? 🎀
+            </div>
+        </div>
+        
+        <div class="recommendations" id="recommendations">
+            <button class="chip" onclick="sendRecommendation('Buatkan pantun lucu dong!')">🎭 Pantun Lucu</button>
+            <button class="chip" onclick="sendRecommendation('Berikan tips belajar coding')">💻 Tips Coding</button>
+            <button class="chip" onclick="sendRecommendation('Rekomendasi film akhir pekan')">🍿 Rekomendasi Film</button>
+        </div>
+
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Ketik pesanmu di sini..." autocomplete="off" required />
+            <button type="submit" aria-label="Send">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
